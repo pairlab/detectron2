@@ -1,3 +1,18 @@
+# Docker
+To use docker, clone the repo and run
+```
+sudo docker build -t pointrend:0.0
+sudo docker run -it --gpus all pointrend:0.0 /bin/bash
+```
+One you are in the container
+```
+conda activate pointrend
+python inference.py
+```
+Then you can cp it back to your host and view the output
+```
+sudo docker container cp container_id:/pointrend/output.jpg path_on_your_host
+```
 # PointRend: Image Segmentation as Rendering
 
 Alexander Kirillov, Yuxin Wu, Kaiming He, Ross Girshick
