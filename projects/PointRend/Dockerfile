@@ -31,4 +31,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -y &&\
   gcc-9  g++-9
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-9
 
-
+COPY . .
