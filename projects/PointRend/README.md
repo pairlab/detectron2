@@ -1,10 +1,10 @@
 # Docker
-To use docker, clone the repo and run
+To use docker for inference, clone the repo and run
 ```
 sudo docker build -t pointrend:0.0 .
 sudo docker run -it --gpus all pointrend:0.0 /bin/bash
 ```
-One you are in the container (the default input image is "input.jpg")
+Once you are in the container terminal (the default input image is "input.jpg")
 ```
 conda activate pointrend
 python inference.py
